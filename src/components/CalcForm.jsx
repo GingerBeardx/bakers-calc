@@ -46,7 +46,7 @@ const CalcForm = ({ weights, onCalc, measurement, readyToCalc }) => {
         value={weights.salt}
         readOnly
       />
-      {readyToCalc && (
+      {readyToCalc && flour > 0 && (
         <input type="submit" className="btn btn-calc" value="Calculate" />
       )}
     </form>

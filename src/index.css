@@ -10,11 +10,13 @@ form {
   display: flex;
   /* width: 500px; */
   flex-direction: column;
+  width: 200px;
 }
 
 label,
 input {
-  padding: 0.25em;
+  padding: 0.25em 0;
+  text-align: left;
   /* width: 35%; */
 }
 
