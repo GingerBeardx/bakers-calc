@@ -29,6 +29,7 @@ const Percentages = ({ measurement, onSet }) => {
         name="flour"
         defaultValue={100}
         readOnly
+        disabled
       />
       <label>{measurement} of Water:</label>
       <input

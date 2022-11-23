@@ -29,6 +29,7 @@ const CalcForm = ({ weights, onCalc, measurement, readyToCalc }) => {
         name="water"
         value={weights.water}
         readOnly
+        disabled
       />
       <label>{measurement} of Starter (grams):</label>
       <input
@@ -37,6 +38,7 @@ const CalcForm = ({ weights, onCalc, measurement, readyToCalc }) => {
         name="starter"
         value={weights.starter}
         readOnly
+        disabled
       />
       <label>{measurement} of Salt (grams):</label>
       <input
@@ -45,6 +47,7 @@ const CalcForm = ({ weights, onCalc, measurement, readyToCalc }) => {
         name="salt"
         value={weights.salt}
         readOnly
+        disabled
       />
       {readyToCalc && flour > 0 && (
         <input type="submit" className="btn btn-calc" value="Calculate" />
